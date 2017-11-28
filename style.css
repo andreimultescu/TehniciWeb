@@ -1,0 +1,329 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #c1c1c1;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    animation-name: body;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes body {
+    from {background-color:#c1c1c1;}
+    to {background-color: yellow;}
+}
+
+
+/* The element to apply the animation to */
+
+.logo{
+
+    float: left;
+    background: url(logo.png) no-repeat;
+    background-size:contain;
+    height:30px;
+    width: 84px;
+    
+}
+nav{
+    display: block;
+    position: relative;
+    margin: 0px;
+    width: vw;
+    min-height: 20px;
+    height: 40px;
+    height: auto;
+    min-width:350px;}
+main,
+footer {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 80vw;
+    min-height: 20px;
+    height: 40px;
+    min-width:350px;
+}
+
+main {
+    background: #bf9649;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.header,
+.meniu {
+    margin: 0;
+}
+
+.header {
+    display: block;
+    position: relative;
+    padding: 10px;
+    height: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    background: #f7f7f7;
+    
+    
+}
+
+.header li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 6px;
+}
+
+.header li a {
+    text-decoration: none !important;
+    color: #333;
+    font-size: 1em;
+    
+}
+
+.account {
+    float: right;
+}
+
+.logout,
+.login {
+    float: right;
+}
+
+
+.meniu {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: auto;
+    text-align: center;
+    
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+.meniu li {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.meniu li a {
+    text-decoration: none;
+    color: #f00;
+    font-size: 1.2em;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, .1);
+    
+    padding: 10px;
+    margin-right: -4px;
+   
+    font-weight: 300;
+}
+
+.meniu li a:hover {
+    background: #925858;
+    height:auto;
+}
+
+main {
+    display: table;
+    border-right: 2px solid rgba(0, 0, 0, 1);
+}
+
+.masinimain {
+    display: flex;
+    box-shadow: inset 0em 1em 1em rgba(0, 0, 0, 1);
+}
+
+.masini {
+    position: relative;
+    float: left;
+    width: 20%;
+    background: #9e2525;
+    min-height: 100px;
+    padding: 10px 20px;
+    padding-right: 0;
+    animation-name: masini;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-left: 2px solid rgba(0, 0, 0, 1);
+    border-right: 2px solid rgba(0, 0, 0, 1);
+
+}
+@keyframes masini {
+    from {background-color:#9e2525;}
+    to {background-color: #00ff02;}
+}
+
+
+.masini h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: -20px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.masini ul li {
+    padding-bottom: 6px;
+}
+
+.masini ul li a {
+    color: #0c0c0c;
+    font-size: 1.1em;
+}
+
+.masini ul li a:hover {
+    color: #fff;
+}
+
+.products {
+    position: relative;
+    float: right;
+    width: 80%;
+    min-height: 100px;
+    background: #f7f7f7;
+    padding: 10px;
+}
+
+
+
+
+
+.marci h1{
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+}
+
+footer {
+    background: #cc3a3a;
+    margin:0px;
+    width:auto;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 1);
+    
+}
+footer p{
+    background: #cc3a3a;
+    margin:0px;
+    width:auto;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 20px;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 100%;
+        max-width: 100%;
+    }
+    nav,
+    main,
+    footer {
+        width: 100%;
+        
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .money {
+        margin: 0;
+    }
+    .meniu li a {
+    text-decoration: none;
+     color: #f00;
+    font-size: 1.2em;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, .1);
+    
+    padding: 10px;
+    margin-right: -4px;
+    transition: .3s ease;
+    font-weight: 300;
+}
+
+   
+
+    .meniu{        
+        padding-top:10px;
+        margin-top:0px;
+
+        
+    }
+    
+    .header{
+     background: #e7e7e7;
+     padding-bottom:50px;
+     
+    }
+    .ceas {
+        height: auto;
+        text-align: center;
+    }
+    .masinimain {
+        display: block;
+    }
+    .masini {
+        width: 100%;
+        padding: 0;
+        z-index: 1;
+        box-shadow: 0em .2em .5em rgba(0, 0, 0, .3);
+    }
+    .masini h1 {
+        margin: 0;
+        margin-top: 10px;
+    }
+    .masini ul li {
+        padding-bottom: 8px;
+        text-align: center;
+    }
+    .products {
+        width: calc(100% - 40px);
+        padding: 20px;
+        font-size: 1.2em;
+    }
+    
+    .marci {
+        margin: auto;
+        width: 90%;
+
+    }
+    
+    footer {
+        padding: 6px 0;
+    }
+    
+    
+}
+img {
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+
